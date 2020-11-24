@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gerenciar Clientes</title>
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!--Inicio da barra de navegação-->
+
+    <nav>
+      <div class="nav-wrapper fundo">
+        <a href="#" class="brand-logo font2">Gerenciar Clientes</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="listar.html">Listar Clientes</a></li>
+          <li><a href="cadastrar.html">Cadastrar Clientes</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Fim da barra de navegação-->
+
+    <!--Inicio do formulario-->
+
+    <h2>Cadastro de Clientes</h2>
+
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="txtnome" type="text" class="validate" />
+            <label for="txtnome">Nome Cliente</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="txtemail" type="email" class="validate" />
+            <label for="txtemail">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="txttelefone" type="tel" class="validate" />
+            <label for="txttelefone">Telefone</label>
+          </div>
+
+          <div class="input-field col s4">
+            <input id="txtcpf" type="text" class="validate" />
+            <label for="txtcpf">CPF</label>
+          </div>
+
+          <div class="input-field col s4">
+            <input
+              id="txtidade"
+              type="number"
+              class="validate"
+              min="16"
+              max="18"
+              value="18"
+            />
+            <label for="txtidade">Idade</label>
+          </div>
+        </div>
+
+        <div class="row centro">
+          <div>
+            <button
+              id="btnCadastrar"
+              class="btn waves-effect waves-light fundo"
+            >
+              Cadastrar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!--Fim do formulario-->
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>
