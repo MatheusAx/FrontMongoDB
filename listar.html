@@ -1,14 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Gerenciar Clientes</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -22,9 +19,10 @@
     />
 
     <link rel="stylesheet" href="css/styles.css" />
-  </head>
+    
+</head>
 
-  <body>
+  <body onload="listarClientes()">
     <!--Inicio da barra de navegação-->
 
     <nav>
@@ -38,6 +36,28 @@
     </nav>
 
     <!--Fim da barra de navegação-->
+
+<main>
+    <div id="exibir">
+        <table id="tabela">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>E-mail</E-></th>
+                <th>Telefone</th>
+                <th>CPF</th>
+                <th>Idade</th>
+                <th>Data Cadastro</th>
+                <th >Atualizar  </th>
+                <th>Deletar </th>
+            </tr>
+        </table>
+
+    </div>
+</main>
+
+
+    <script src="js/script.js"></script>
     <script src="js/materialize.min.js"></script>
   </body>
 </html>

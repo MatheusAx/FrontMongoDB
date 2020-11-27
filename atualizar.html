@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Gerenciar Clientes</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atualizar Cliente</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -22,26 +19,25 @@
     />
 
     <link rel="stylesheet" href="css/styles.css" />
-  </head>
-
-  <body>
+</head>
+<body>
     <!--Inicio da barra de navegação-->
 
     <nav>
-      <div class="nav-wrapper fundo">
-        <a href="#" class="brand-logo font2">Gerenciar Clientes</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="listar.html">Listar Clientes</a></li>
-          <li><a href="cadastrar.html">Cadastrar Clientes</a></li>
-        </ul>
-      </div>
-    </nav>
+        <div class="nav-wrapper fundo">
+          <a href="#" class="brand-logo font2">Gerenciar Clientes</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="listar.html">Listar Clientes</a></li>
+            <li><a href="cadastrar.html">Cadastrar Clientes</a></li>
+          </ul>
+        </div>
+      </nav>
+  
+      <!--Fim da barra de navegação-->
+    
+      <!--Inicio do formulario-->
 
-    <!--Fim da barra de navegação-->
-
-    <!--Inicio do formulario-->
-
-    <h2>Cadastro de Clientes</h2>
+    <h2>Atualização de Clientes</h2>
 
     <div class="row">
       <form onsubmit="return false" class="col s12">
@@ -82,10 +78,10 @@
         <div class="row centro">
           <div>
             <button
-              id="btnCadastrar"
+              id="btnAtualizar" onclick="atualizar()"
               class="btn waves-effect waves-light fundo"
             >
-              Cadastrar
+              Atualizar
             </button>
           </div>
         </div>
@@ -95,5 +91,5 @@
     <!--Fim do formulario-->
     <script src="js/script.js"></script>
     <script src="js/materialize.min.js"></script>
-  </body>
+</body>
 </html>
